@@ -33,26 +33,5 @@ content.innerHTML = sections[section] || '';
 });
 });
 
-
-// Dark Mode
-
-
-const toggleBtn = document.getElementById('darkModeToggle');
-
-
-toggleBtn.addEventListener('click', () => {
-document.body.classList.toggle('dark');
-
-
-if (document.body.classList.contains('dark')) {
-document.body.style.background = '#1a1a1a';
-document.body.style.color = 'white';
-} else {
-document.body.style.background = '#f4f4f4';
-document.body.style.color = 'black';
-}
-});
-
-
 // Carregar página inicial
 content.innerHTML = sections.home;
